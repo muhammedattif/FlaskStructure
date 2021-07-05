@@ -21,14 +21,19 @@ class dashboard(Resource):
         pass
 
     def get(self):
-
-        end_point = request.args.get('url')
-        erp_url = os.getenv('BASE_URL') + end_point
-
-        headers = {"Authorization":os.getenv('TOKEN')}
+        try:
+            end_point = request.args.get('url')
+            erp_url = os.getenv('BASE_URL') + end_point
+            headers = {"Authorization":os.getenv('TOKEN')}
+        except:
+            return {'message':'end point is required'}
 
         response = requests.get(erp_url, headers = headers)
-        return response.json()
+
+        if response.ok:
+            return response.json()
+
+        return {'message': 'something went wrong!'}
 
     def delete(self):
         pass
