@@ -5,7 +5,7 @@ from apps.dashboard.urls import urls
 from flask_restful import Api
 from flask_cors import CORS
 import os
-0
+
 def create_app(name):
 
     app = Flask(name)
