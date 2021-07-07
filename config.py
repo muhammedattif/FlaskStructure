@@ -10,7 +10,7 @@ class Config():
     DEBUG = False
     SECRET_KEY = os.urandom(16)
     SESSION_COOKIE_SECURE = True
-    SERVER_NAME = 'http://apilayer.herokuapp.com/'
+    SERVER_NAME = 'http://apilayer.herokuapp.com'
     TRAP_HTTP_EXCEPTIONS = True
 
 # class for production configurations
