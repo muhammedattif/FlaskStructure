@@ -1,6 +1,6 @@
 
-from . import views
+from apps.user import views
 
 urls = [
-    (views.dashboard2,'/stoke'),
+
 ]

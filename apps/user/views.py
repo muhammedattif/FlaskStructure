@@ -1,9 +1,24 @@
-from flask_restful import Resource, Api, reqparse
-from flask import request, jsonify
+from flask_restful import Resource
+from flask import request
 import json
 import requests
-import os
 
-class dashboard2(Resource):
-    def get(self):
-        return {'d':'d'}
+
+class UpdateUser(Resource):
+    def post(self):
+        pass
+
+class UpdateUserInfo(Resource):
+
+    def post(self):
+        pass
+
+class ResetPassword(Resource):
+
+    def put(self):
+        pass
+
+class GenerateCertificate(Resource):
+
+    def post(self):
+        pass

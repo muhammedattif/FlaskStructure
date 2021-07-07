@@ -1,6 +1,8 @@
 
-from . import views
+from apps.dashboard import views
 
 urls = [
-    (views.dashboard,'/dashboard')
+    (views.Index,'/'),
+    (views.VTSRegister,'/vts/register'),
+
 ]
