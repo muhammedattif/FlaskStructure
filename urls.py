@@ -3,7 +3,6 @@ import importlib
 
 # this function takes api as an input and loads the urls of each app
 def load_apps(api):
-    print(settings.BASE_DIR)
 
     # load installed apps
     for app in settings.INSTALLED_APPS:
