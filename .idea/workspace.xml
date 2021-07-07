@@ -2,16 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c1027fcc-56b3-49d3-ba48-19246ee5f793" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.env" beforeDir="false" afterPath="$PROJECT_DIR$/.env" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app.py" beforeDir="false" afterPath="$PROJECT_DIR$/app.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/apps/dashboard/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/apps/dashboard/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/apps/fawry/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/apps/fawry/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/apps/fawry/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/apps/fawry/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/apps/telegram/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/apps/telegram/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/apps/telegram/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/apps/telegram/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/apps/user/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/apps/user/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/apps/user/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/apps/user/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config.py" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/urls.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
