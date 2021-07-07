@@ -7,7 +7,7 @@ def load_apps(api):
     # load installed apps
     for app in settings.INSTALLED_APPS:
         # load urls file for each app as a module
-        module = importlib.machinery.SourceFileLoader('urls.py',settings.BASE_DIR + 'apps\\' + app + '\\urls.py').load_module()
+        module = importlib.machinery.SourceFileLoader('urls.py',settings.BASE_DIR + 'apps/' + app + '/urls.py').load_module()
 
         # set urls routes for each app in RESTFull API object
         for url in module.urls:
