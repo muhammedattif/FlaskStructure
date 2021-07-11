@@ -10,7 +10,7 @@ INSTALLED_APPS = [
 ]
 
 # Define the base dir of the project
-BASE_DIR = str(Path(__file__).resolve().parent) + '\\'
+BASE_DIR = str(Path(__file__).resolve().parent) + '/'
 # the following line do the same thing
 # BASE_DIR = os.path.abspath(os.path.join('../', os.path.dirname(__file__ ))) + '\\'
 
