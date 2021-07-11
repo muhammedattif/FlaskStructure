@@ -7,6 +7,7 @@ INSTALLED_APPS = [
     'fawry',
     'user',
     'telegram',
+
 ]
 
 # Define the base dir of the project
@@ -27,4 +28,4 @@ ERP_URL = 'https://erpdev.variiance.com/'
 ERP_TOKEN = 'token c14f1f8e6c0b04f:3354d1ba0f8c414'
 
 # Working Environment
-ENV = 'production'
+ENV = 'development'
