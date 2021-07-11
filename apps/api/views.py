@@ -49,9 +49,9 @@ class dashboard(Resource):
         pass
 
     def get(self):
-        
+
         end_point = request.args.get('url')
-        erp_full = settings.ERP_URL + str(end_point)
+        erp_url = settings.ERP_URL + str(end_point)
         headers = {"Authorization":settings.ERP_TOKEN}
 
         # must wrapped by try, except clause
