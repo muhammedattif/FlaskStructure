@@ -35,7 +35,7 @@ class dashboard(Resource):
             # oc.mkdir('upload/123')
             oc.put_file('upload/123/123.txt', image.filename)
             link_info = oc.share_file_with_link('upload/123/123.txt')
-            os.remove(str(image.filename))
+            os.remove(settings.BASE_DIR + str(image.filename))
         except Exception as e:
             return {'message': 'down'}
 
