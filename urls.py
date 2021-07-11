@@ -15,8 +15,9 @@ def load_apps(api):
             # check if urls file is exist
             module = importlib.machinery.SourceFileLoader('urls.py', path).load_module()
         except:
+
             if not os.path.isfile(path):
-                print(app)
+
                 # If urls file not exists
                 # create a new one
                 with open(path, "w") as urls_file:

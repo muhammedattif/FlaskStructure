@@ -2,7 +2,7 @@ import os
 from pathlib import Path
 # Application definition
 INSTALLED_APPS = [
-    'api',
+    'callapi',
     'dashboard',
     'fawry',
     'user',

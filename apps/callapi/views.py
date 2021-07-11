@@ -8,21 +8,22 @@ import owncloud
 from helpers.utils import *
 import settings
 
-class dashboard(Resource):
+class CallApi(Resource):
 
 
-    def postOld(self):
+    def post(self):
         data = request.get_json()
+
         end_point = data['url']
         erp_url = settings.ERP_URL + end_point
 
         headers = {"Authorization": settings.ERP_TOKEN}
 
-        response = requests.get(erp_url, headers = headers)
+        response = requests.post(erp_url, data = json.dumps(data['data']), headers = headers)
         return response.json()
 
-    def post(self):
 
+    def postt(self):
         image = request.files['file']
         image.save(os.path.join(image.filename))
 
@@ -57,8 +58,8 @@ class dashboard(Resource):
         # must wrapped by try, except clause
         try:
             response = requests.get(erp_url, headers = headers)
-            if response.ok:
-                return response.json()
+
+            return response.json()
         except:
             return {'message': 'something went wrong!'}, 5200
 
