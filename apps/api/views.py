@@ -39,7 +39,7 @@ class dashboard(Resource):
 
             # we can also use
             #os.path.join(settings.BASE_DIR, str(image.filename))
-            
+
         except Exception as e:
             return {'message': 'down'}
 
@@ -49,19 +49,18 @@ class dashboard(Resource):
         pass
 
     def get(self):
-
+        
         end_point = request.args.get('url')
-
-
-        erp_url = settings.ERP_URL + str(end_point)
+        erp_full = settings.ERP_URL + str(end_point)
         headers = {"Authorization":settings.ERP_TOKEN}
 
-        response = requests.get(erp_url, headers = headers)
-
-        if response.ok:
-            return response.json()
-
-        return {'message': 'something went wrong!'}
+        # must wrapped by try, except clause
+        try:
+            response = requests.get(erp_url, headers = headers)
+            if response.ok:
+                return response.json()
+        except:
+            return {'message': 'something went wrong!'}, 5200
 
     def delete(self):
         pass
